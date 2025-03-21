@@ -1,6 +1,6 @@
 name: Meeting Minutes
 description: 会议纪要 | Meeting Minutes
-title: "[Meeting]: RuyiSDK XXth Meeting"
+title: "[Meeting]: YYYY-MM-DD RuyiSDK Meeting"
 labels: ["meeting"]
 assignees:
   - FIFCC

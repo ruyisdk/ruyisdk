@@ -15,7 +15,7 @@ body:
         - [Project/Task Name | 项目/任务名称]: [Progress Description | 进展描述]
         - [Project/Task Name | 项目/任务名称]: [Progress Description | 进展描述]
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: issues
@@ -60,4 +60,4 @@ body:
         - **Time | 时间**: HH:MM
         - **Link | 链接**: 
     validations:
-      required: true
+      required: false

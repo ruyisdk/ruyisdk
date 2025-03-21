@@ -1,0 +1,63 @@
+name: Meeting Minutes
+description: 会议纪要 | Meeting Minutes
+title: "[Meeting]: YYYY-MM-DD RuyiSDK Meeting"
+labels: ["meeting"]
+assignees:
+  - FIFCC
+  - xijing21
+body:
+  - type: textarea
+    id: progress
+    attributes:
+      label: Work Progress | 工作进展
+      description: 记录本期工作进展 | Record the progress 
+      placeholder: |
+        - [Project/Task Name | 项目/任务名称]: [Progress Description | 进展描述]
+        - [Project/Task Name | 项目/任务名称]: [Progress Description | 进展描述]
+    validations:
+      required: false
+
+  - type: textarea
+    id: issues
+    attributes:
+      label: Issues & Topics | 问题&议题
+      description: 记录会议中讨论的问题和议题 | Record issues and topics discussed in the meeting
+      placeholder: |
+        - [Issue/Topic Name | 问题/议题名称]: [Description | 描述]
+        - [Issue/Topic Name | 问题/议题名称]: [Description | 描述]
+    validations:
+      required: false
+
+  - type: textarea
+    id: key_decisions
+    attributes:
+      label: Key Decisions | 主要决策
+      description: 记录会议中做出的主要决策 | Record key decisions made during the meeting
+      placeholder: |
+        - [Decision | 决策]: [Description | 描述]
+        - [Decision | 决策]: [Description | 描述]
+    validations:
+      required: false
+
+  - type: textarea
+    id: action_items
+    attributes:
+      label: Action Items | 待办事项
+      description: 记录会议中确定的待办事项 | Record action items identified during the meeting
+      placeholder: |
+        - [Task | 任务]: [Description | 描述] (Assigned to: [Name | 负责人], Deadline: [YYYY-MM-DD | 截止日期])
+        - [Task | 任务]: [Description | 描述] (Assigned to: [Name | 负责人], Deadline: [YYYY-MM-DD | 截止日期])
+    validations:
+      required: true
+
+  - type: textarea
+    id: next_meeting
+    attributes:
+      label: Next Meeting | 下次会议
+      description: 记录下次会议的时间、地点和议程 | Record the time, location, and agenda for the next meeting
+      placeholder: |
+        - **Date | 日期**: YYYY-MM-DD
+        - **Time | 时间**: HH:MM
+        - **Link | 链接**: 
+    validations:
+      required: false

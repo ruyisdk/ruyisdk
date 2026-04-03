@@ -1,0 +1,171 @@
+name: 资源接入需求
+description: 申请在 RuyiSDK 中接入新资源（工具链、库、示例代码等）
+title: "[Resource Request]: 请简述资源名称"
+labels: ["resource-request"]
+assignees: 
+  - xijing21
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您帮助 RuyiSDK 完善资源生态！
+
+        **处理说明**：
+        - 厂商工具链：项目组将联系厂商寻求合作与授权，后续在 packages-index 仓库正式接入。
+        - 库/示例等：内部评估（如纳入 sysroot），本 Issue 作为需求留痕。
+        - 合作指南：https://ruyisdk.org/docs/Other/partner-guide
+
+  - type: markdown
+    attributes:
+      value: "## 必填信息"
+
+  - type: input
+    id: resource-name
+    attributes:
+      label: 资源名称
+      placeholder: "例如：Xuantie GNU Toolchain、SDL2、Dhrystone 示例"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: resource-type
+    attributes:
+      label: 资源类型
+      options:
+        - 工具（定制工具链、编译器、调试器等）
+        - 库（开发依赖库、运行时库）
+        - 示例代码（Demo、Benchmark）
+        - 其他（请在“补充信息”中说明）
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: 当前版本
+      placeholder: "2.8.0 / 5.2.9 / latest"
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: 项目地址（官网/仓库/发布页）
+      placeholder: "https://github.com/..."
+    validations:
+      required: true
+
+  - type: input
+    id: license
+    attributes:
+      label: 许可证
+      description: 如 Apache-2.0、MIT、GPL-3.0；若不确定请填“未知”
+      placeholder: "MIT / 未知"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: access-mode
+    attributes:
+      label: 希望的接入模式
+      options:
+        - 源码（RuyiSDK 获取源码并构建）
+        - 二进制（直接提供构建好的文件或包）
+        - 链接地址（仅提供官方下载链接）
+        - 其他（请在“补充信息”中说明）
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "## 扩展信息（按需填写）"
+
+  - type: markdown
+    attributes:
+      value: "### 如果是工具，请补充："
+
+  - type: checkboxes
+    id: arch-support
+    attributes:
+      label: 支持的系统架构（可多选）
+      options:
+        - label: x86_64
+        - label: aarch64
+        - label: riscv64
+        - label: 其他（请在补充信息中说明）
+
+  - type: input
+    id: env-support
+    attributes:
+      label: 支持的发行版/环境
+      placeholder: "Linux (Ubuntu 22.04+), macOS, Windows"
+
+  - type: markdown
+    attributes:
+      value: "### 如果选择“源码”接入并希望提供给用户二进制，请提供构建信息："
+
+  - type: input
+    id: source-repo
+    attributes:
+      label: 源码仓库地址
+      placeholder: "https://github.com/..."
+
+  - type: textarea
+    id: build-deps
+    attributes:
+      label: 构建依赖
+      placeholder: "cmake >= 3.15, gcc >= 10"
+      render: shell
+
+  - type: textarea
+    id: build-steps
+    attributes:
+      label: 特殊构建步骤
+      placeholder: "例如：需要执行 ./configure --prefix=/usr ..."
+
+  - type: textarea
+    id: authorization-info
+    attributes:
+      label: 授权信息
+      placeholder: "Apache-2.0 允许再分发；或：已获得厂商授权"
+
+  - type: markdown
+    attributes:
+      value: "## 使用场景（帮助判断优先级）"
+
+  - type: input
+    id: board
+    attributes:
+      label: 开发板型号
+      placeholder: "Milk-V Duo256m、SiFive HiFive Unmatched"
+
+  - type: input
+    id: os
+    attributes:
+      label: 操作系统
+      placeholder: "Ubuntu 22.04、openEuler RISC-V"
+
+  - type: input
+    id: demo-app
+    attributes:
+      label: 示例/应用名称
+      placeholder: "zstd 编译、图形 Demo"
+
+  - type: textarea
+    id: problem-desc
+    attributes:
+      label: 问题简述
+      description: 缺少该资源时遇到什么障碍？
+      placeholder: "编译 zstd 时缺少 liblzma 库，导致链接失败。"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "## 补充信息"
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: 其他说明
+      placeholder: "需要 riscv64gc 静态版本；已与厂商初步沟通等。"

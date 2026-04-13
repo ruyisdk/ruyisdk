@@ -2,9 +2,7 @@ name: Meeting Minutes
 description: 会议纪要 | Meeting Minutes
 title: "[Meeting]: YYYY-MM-DD RuyiSDK Meeting"
 labels: ["meeting"]
-assignees:
-  - FIFCC
-  - xijing21
+assignees: []
 body:
   - type: textarea
     id: progress

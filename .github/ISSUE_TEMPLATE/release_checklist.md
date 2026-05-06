@@ -76,18 +76,18 @@ labels: [release]
 
 ---
 
-## 5. 宣发与推送  @yuxizhang
+## 5. 宣发与推送  @zhangyuxii
 
 - ruyisdk.cn 和 IM 渠道、wechat-articles 是默认的推送渠道；
 - 参考 https://github.com/ruyisdk/packages-index/tree/main/news 对应版本文档；
 - 允许弹性滞后，不阻塞发版。
 
-**宣发（固定渠道）**  @yuxizhang
+**宣发（固定渠道）**
 - [ ] 技术论坛：ruyisdk.cn
 - [ ] IM 渠道推送
 - [ ] RuyiSDK双周进展汇报： https://github.com/ruyisdk/wechat-articles
 
-**宣发（更多途径）**  @xijing21
+**宣发（更多途径）**
 根据新特性决策更多宣发策略，请按需编辑（每行一条），提交后可逐行勾选。
 
 - [ ] [宣发途径]-[系列]-[具体事项]

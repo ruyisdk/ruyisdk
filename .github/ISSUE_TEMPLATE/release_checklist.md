@@ -64,11 +64,11 @@ labels: [release]
 - [ ] ruyisdk-vscode-extension：https://fast-mirror.isrc.ac.cn/ruyisdk/ide/plugins/vscode/
 - [ ] ruyisdk-eclipse-plugins：https://fast-mirror.isrc.ac.cn/ruyisdk/ide/plugins/eclipse/
 
-### ruyi 发布到 pypi  @xen0n
-- [ ] pypi ： https://pypi.org/project/ruyi/
+### ruyi 发布到 PyPI  @xen0n
+- [ ] PyPI ： https://pypi.org/project/ruyi/
 
-### VSCode 插件发布到 openVSX 和 visualstudio marketplace  @U2FsdGVkX1
-- [ ] openVSX：https://open-vsx.org/extension/RuyiSDK/ruyisdk-vscode-extension
+### VSCode 插件发布到 open VSX 和 Visual Studio Marketplace  @U2FsdGVkX1
+- [ ] open VSX：https://open-vsx.org/extension/RuyiSDK/ruyisdk-vscode-extension
 - [ ] Visual Studio Marketplace：https://marketplace.visualstudio.com/manage/publishers/RuyiSDK
 
 ### Eclipse 插件发布到 Eclipse Marketplace  @pzhlkj6612
